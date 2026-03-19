@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white font-[Tahoma]">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md font-bold">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-center items-center h-16">
+      <nav class="hidden md:flex space-x-8">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#education" class="hover:underline">Education</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="py-20 pt-32 opacity-0 translate-y-20 transition-all duration-700 ease-out">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+
+        <div class="flex-1 flex justify-center">
+            <img src="https://via.placeholder.com/250"
+                 class="rounded-full w-64 h-64 object-cover border-4 border-gray-700">
+        </div>
+
+        <div class="flex-1 text-center md:text-left">
+            <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-xl text-gray-300">
+                Discover my projects, skills, and experience.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 bg-gray-900 opacity-0 translate-y-20 transition-all duration-700 ease-out">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6">About Me</h2>
+        <p class="text-lg leading-relaxed">
+            My name is Tyrone Owen. I'm a second year college student studying IT Programming.
+            I've always found IT as an interesting field and it's ever evolving state is something I wish to be a part of.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 bg-gray-800 opacity-0 translate-y-20 transition-all duration-700 ease-out">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6">Skills</h2>
+        <ul class="list-disc list-inside text-lg space-y-2">
+            <li>A+ certified</li>
+            <li>Word/Excel/Powerpoint/Access literate</li>
+            <li>Tech+ certified</li>
+            <li>HTML proficient</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 bg-gray-700 opacity-0 translate-y-20 transition-all duration-700 ease-out">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-10">Projects</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition">
+                <h3 class="text-2xl font-semibold mb-3">Scratch Game</h3>
+                <p class="text-gray-300">A simple game built with Scratch.</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition">
+                <h3 class="text-2xl font-semibold mb-3">HTML Projects</h3>
+                <p class="text-gray-300">Various web development projects using HTML, CSS.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-20 bg-gray-600 opacity-0 translate-y-20 transition-all duration-700 ease-out">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-10">Education</h2>
+
+        <div class="relative border-l-4 border-white pl-6 space-y-10">
+
+            <div>
+                <div class="absolute -left-3 w-6 h-6 bg-white rounded-full"></div>
+                <h3 class="text-xl font-semibold">Hoerskool Noordheuwel</h3>
+                <p>2018 - 2023</p>
+            </div>
+
+            <div>
+                <div class="absolute -left-3 w-6 h-6 bg-white rounded-full"></div>
+                <h3 class="text-xl font-semibold">Unicollege IT Technical</h3>
+                <p>2025</p>
+            </div>
+
+            <div>
+                <div class="absolute -left-3 w-6 h-6 bg-white rounded-full"></div>
+                <h3 class="text-xl font-semibold">Unicollege IT Programming</h3>
+                <p>2026</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-gray-500 opacity-0 translate-y-20 transition-all duration-700 ease-out">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
+
+        <form class="space-y-6">
+            <input type="text" placeholder="Your Name"
+                class="w-full p-3 rounded bg-gray-800 text-white outline-none">
+
+            <input type="email" placeholder="Your Email"
+                class="w-full p-3 rounded bg-gray-800 text-white outline-none">
+
+            <textarea placeholder="Your Message"
+                class="w-full p-3 rounded bg-gray-800 text-white outline-none h-32"></textarea>
+
+            <div class="flex justify-center">
+                <button class="bg-black px-6 py-3 rounded hover:bg-gray-900 transition flex items-center gap-2">
+                     Send Message
+                </button>
+    </div>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-center py-4">
+    <p>&copy; 2024 My Portfolio</p>
+</footer>
+
+<!-- ANIMATION SCRIPT -->
+<script>
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0", "translate-y-20");
+            entry.target.classList.add("opacity-100", "translate-y-0");
+        } else {
+            entry.target.classList.add("opacity-0", "translate-y-20");
+            entry.target.classList.remove("opacity-100", "translate-y-0");
+        }
+    });
+}, { threshold: 0.2 });
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
